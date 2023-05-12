@@ -43,7 +43,9 @@ export async function animeCommand(interaction: APIApplicationCommandInteraction
 				options: [
 					...response.map((data: any) => ({
 						value: data!.id.toString(),
-						label: cutText(Object.values(data!.title!).filter((title: any) => title?.length)[0] as string, 1e2) ?? 'Unknown Name',
+						label:
+							cutText(Object.values(data!.title!).filter((title: any) => title?.length)[0] as string, 1e2) ??
+							'Unknown Name',
 						...(data!.description?.length && { description: cutText(parseDescription(data!.description), 1e2) })
 					}))
 				]
@@ -66,8 +68,12 @@ export async function animeComponents(interaction: APIMessageComponentInteractio
 		}: any) => media[0]
 	);
 
-	const startDate = !Object.values(data.startDate!).some((value) => value === null) ? Object.values(data.startDate!).join('/') : null;
-	const endDate = !Object.values(data.endDate!).some((value) => value === null) ? Object.values(data.endDate!).join('/') : null;
+	const startDate = !Object.values(data.startDate!).some((value) => value === null)
+		? Object.values(data.startDate!).join('/')
+		: null;
+	const endDate = !Object.values(data.endDate!).some((value) => value === null)
+		? Object.values(data.endDate!).join('/')
+		: null;
 
 	const button = {
 		type: ComponentType.ActionRow,
@@ -97,7 +103,9 @@ export async function animeComponents(interaction: APIMessageComponentInteractio
 					`${bold(italic('Status:'))} ${titleCase(data.status!.replace(/_/g, ' '))}`,
 					`${bold(italic('Source:'))} ${titleCase(data.source!.replace(/_/g, ' '))}`,
 					...(startDate ? [`${bold(italic('Aired:'))} ${getDate(startDate, endDate)}`] : []),
-					...(data.duration ? [`${bold(italic('Length:'))} ${getDurationLength(data.duration, data.episodes!, data.format!)}`] : []),
+					...(data.duration
+						? [`${bold(italic('Length:'))} ${getDurationLength(data.duration, data.episodes!, data.format!)}`]
+						: []),
 					...(data.nextAiringEpisode
 						? [
 								`${bold(italic('Next episodes:'))} ${time(data.nextAiringEpisode.airingAt, 'R')} (episode ${
@@ -155,5 +163,7 @@ function getDurationLength(duration: number, episodes: number, format: string): 
 function getDate(startDate: string, endDate: string | null): string {
 	if (startDate === endDate) return moment(new Date(startDate)).format('MMM D, YYYY');
 	else if (startDate && !endDate) return `${moment(new Date(startDate)).format('MMM D, YYYY')} to ?`;
-	return `${moment(new Date(startDate)).format('MMM D, YYYY')} to ${moment(new Date(endDate as string)).format('MMM D, YYYY')}`;
+	return `${moment(new Date(startDate)).format('MMM D, YYYY')} to ${moment(new Date(endDate as string)).format(
+		'MMM D, YYYY'
+	)}`;
 }

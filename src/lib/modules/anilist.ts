@@ -97,7 +97,12 @@ const MangaFragment = gql`
 export class Anilist {
 	private readonly endpoint = 'https://graphql.anilist.co/';
 
-	public async search<C extends SearchType>(variables: { type: C; search: string; page?: number; perPage?: number }): Promise<any> {
+	public async search<C extends SearchType>(variables: {
+		type: C;
+		search: string;
+		page?: number;
+		perPage?: number;
+	}): Promise<any> {
 		const { type, search, page = 1, perPage = 10 } = variables;
 		try {
 			const res = await fetch(this.endpoint, {
@@ -186,10 +191,9 @@ const htmlEntityReplacements = Object.freeze({
 } as const);
 
 export function parseDescription(description: string) {
-	return decode(description.replace(htmlEntityRegex, (_, type: keyof typeof htmlEntityReplacements) => htmlEntityReplacements[type])).replace(
-		excessiveNewLinesRegex,
-		'\n\n'
-	);
+	return decode(
+		description.replace(htmlEntityRegex, (_, type: keyof typeof htmlEntityReplacements) => htmlEntityReplacements[type])
+	).replace(excessiveNewLinesRegex, '\n\n');
 }
 
 type SearchType = 'anime' | 'manga';

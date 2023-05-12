@@ -43,7 +43,9 @@ export async function mangaCommand(interaction: APIApplicationCommandInteraction
 				options: [
 					...response.map((data: any) => ({
 						value: data!.id.toString(),
-						label: cutText(Object.values(data!.title!).filter((title: any) => title?.length)[0] as string, 1e2) ?? 'Unknown Name',
+						label:
+							cutText(Object.values(data!.title!).filter((title: any) => title?.length)[0] as string, 1e2) ??
+							'Unknown Name',
 						...(data!.description?.length && { description: cutText(parseDescription(data!.description), 1e2) })
 					}))
 				]
@@ -66,8 +68,12 @@ export async function mangaComponents(interaction: APIMessageComponentInteractio
 		}: any) => media[0]
 	);
 
-	const startDate = !Object.values(data.startDate!).some((value) => value === null) ? Object.values(data.startDate!).join('/') : null;
-	const endDate = !Object.values(data.endDate!).some((value) => value === null) ? Object.values(data.endDate!).join('/') : null;
+	const startDate = !Object.values(data.startDate!).some((value) => value === null)
+		? Object.values(data.startDate!).join('/')
+		: null;
+	const endDate = !Object.values(data.endDate!).some((value) => value === null)
+		? Object.values(data.endDate!).join('/')
+		: null;
 
 	const button = {
 		type: ComponentType.ActionRow,
