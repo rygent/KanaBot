@@ -21,7 +21,7 @@ include_coauthors = true
 [update]
 always = true
 require_automerge_label = false
-ignored_usernames = []
+ignored_usernames = ["renovate"]
 
 [approve]
 auto_approve_usernames = ["renovate"]
