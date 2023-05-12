@@ -48,5 +48,5 @@
     "moment": "^2.29.4",
     "pino": "^8.8.0"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.5.1"
 }
