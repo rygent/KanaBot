@@ -6,7 +6,10 @@ export function formatNumber(input: number): string {
 	return input.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
 
-export function formatArray(input: string[], options: { style?: Intl.ListFormatStyle; type?: Intl.ListFormatType } = {}): string {
+export function formatArray(
+	input: string[],
+	options: { style?: Intl.ListFormatStyle; type?: Intl.ListFormatType } = {}
+): string {
 	const { style = 'short', type = 'conjunction' } = options;
 	return new Intl.ListFormat('en-US', { style, type }).format(input);
 }

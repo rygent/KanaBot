@@ -2,7 +2,9 @@
 import { ApplicationCommandOptionType, APIApplicationCommandInteractionDataOption } from 'discord-api-types/v10';
 import { Command, ArgumentsOf } from './argumentsOf';
 
-export function transformInteraction<T extends Command>(options: readonly APIApplicationCommandInteractionDataOption[]): ArgumentsOf<T> {
+export function transformInteraction<T extends Command>(
+	options: readonly APIApplicationCommandInteractionDataOption[]
+): ArgumentsOf<T> {
 	const opts: any = {};
 
 	for (const top of options) {
