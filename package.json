@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
-    "tsup": "^6.5.0",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.4",
     "wrangler": "^2.7.1"
   },
