@@ -1,0 +1,16 @@
+name = "aina"
+main = "./dist/index.js"
+compatibility_date = "2022-11-30"
+
+node_compat = true
+workers_dev = true
+
+[build]
+command = "npm run build"
+
+[[rules]]
+type = "ESModule"
+globs = [ "**/*.js" ]
+
+[vars]
+CLIENT_NAME = "Vivy"

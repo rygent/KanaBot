@@ -1,0 +1,29 @@
+name: Continuous Delivery
+
+on:
+  workflow_run:
+    workflows: ["Continuous Integration"]
+    branches: ["main"]
+    types:
+      - completed
+
+jobs:
+  Publish:
+    name: Publish to Cloudflare Workers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+      - name: Use Node.js v20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: yarn
+          registry-url: https://registry.yarnpkg.org/
+      - name: Install Dependencies
+        run: yarn --immutable
+      - name: Release Projects
+        run: yarn run publish
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}

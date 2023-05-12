@@ -1,0 +1,10 @@
+{
+  "eslint.validate": ["typescript"],
+  "editor.detectIndentation": false,
+  "files.eol": "\n",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.yarn": true,
+    "**/.git": true
+  }
+}
