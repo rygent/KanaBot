@@ -28,12 +28,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/formatters@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@discordjs/formatters@npm:0.1.0"
+"@discordjs/formatters@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@discordjs/formatters@npm:0.3.1"
   dependencies:
-    discord-api-types: ^0.37.20
-  checksum: 1a6a59ba44c1b3e2a9263f46c38909e9ded931f3a3550fef4c2b3a6a714ea4a63fcf3b6fffd69085574a45667ad333b6c87c097cf6e3e2d577d01e6221e7d89d
+    discord-api-types: ^0.37.41
+  checksum: 96355687853a203b280484419cd96a79b79b4b98f0469ec15be073862fb340cbd60ca2ea68f3d4684e17ff0e8c5f04ddcc6dd88188808e01fcbe0e3eea052d6d
   languageName: node
   linkType: hard
 
@@ -774,7 +774,7 @@ __metadata:
   resolution: "aina@workspace:."
   dependencies:
     "@cloudflare/workers-types": ^4.20221111.1
-    "@discordjs/formatters": ^0.1.0
+    "@discordjs/formatters": ^0.3.1
     "@discordjs/rest": ^1.5.0
     "@rygent/anilist": ^1.3.0
     "@sapphire/time-utilities": ^1.7.8
@@ -1198,17 +1198,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.20, discord-api-types@npm:^0.37.27":
+"discord-api-types@npm:^0.37.23":
+  version: 0.37.28
+  resolution: "discord-api-types@npm:0.37.28"
+  checksum: c033b9c82d5ecb3f273d563db578e21e982a35d106cc66e7ea42d7ef0a79817ca43badd3aade8a5ddb491bc8679ed08b1bcccc105e64ecd1ea5a53a11c2b1f8b
+  languageName: node
+  linkType: hard
+
+"discord-api-types@npm:^0.37.27":
   version: 0.37.27
   resolution: "discord-api-types@npm:0.37.27"
   checksum: f3c404db151862871686008a1e7902f22e2147b391840f9184568d5bc54593babac567fed90bd4831a6b793bd84c424172b081af36badbf950ea0e6fcd5d2e8a
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.23":
-  version: 0.37.28
-  resolution: "discord-api-types@npm:0.37.28"
-  checksum: c033b9c82d5ecb3f273d563db578e21e982a35d106cc66e7ea42d7ef0a79817ca43badd3aade8a5ddb491bc8679ed08b1bcccc105e64ecd1ea5a53a11c2b1f8b
+"discord-api-types@npm:^0.37.41":
+  version: 0.37.42
+  resolution: "discord-api-types@npm:0.37.42"
+  checksum: 3c4f78beae6e18ee8afbaf9e911ccc4ad6b0658c18ea5b95e35f0dc7e56f2cd32b69c16062ab014cce093140ba98d95172e83039cd197fe618873e72a4d26a8b
   languageName: node
   linkType: hard
 
