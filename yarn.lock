@@ -784,7 +784,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.59.5
     "@typescript-eslint/parser": ^5.59.5
     discord-api-types: ^0.37.27
-    discord-interactions: ^3.2.0
+    discord-interactions: ^3.4.0
     dotenv-cra: ^3.0.3
     eslint: ^8.40.0
     eslint-config-prettier: ^8.8.0
@@ -1212,12 +1212,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-interactions@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "discord-interactions@npm:3.2.0"
+"discord-interactions@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "discord-interactions@npm:3.4.0"
   dependencies:
     tweetnacl: ^1.0.3
-  checksum: 5d06632428c4715335bd8a8b086380ccdbb9d97c1a514040d97c6efeffb49b856da43d39728e1f77addd36b5f84d6928baca34ad36847e724923bacceaca9247
+  checksum: 0e458e0e1a16093c45a475750f5a3a6a5c9dfb274a877b2c6f9dc924f74c8d0fd89351c7ed7124c51ff3e307004e12cb6535c1b276f46b9849c998840566c9ae
   languageName: node
   linkType: hard
 

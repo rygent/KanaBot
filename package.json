@@ -39,7 +39,7 @@
     "@sapphire/time-utilities": "^1.7.8",
     "@sapphire/utilities": "^3.11.0",
     "discord-api-types": "^0.37.27",
-    "discord-interactions": "^3.2.0",
+    "discord-interactions": "^3.4.0",
     "dotenv-cra": "^3.0.3",
     "glob": "^10.2.3",
     "globby": "^13.1.3",
