@@ -35,7 +35,12 @@ export function prepareAck() {
 	return new JsonResponse(response);
 }
 
-export function prepareReply(data: { content?: string | null; components?: APIMessageComponent[]; embeds?: APIEmbed[]; ephemeral?: boolean }) {
+export function prepareReply(data: {
+	content?: string | null;
+	components?: APIMessageComponent[];
+	embeds?: APIEmbed[];
+	ephemeral?: boolean;
+}) {
 	const { content, components, embeds, ephemeral = false } = data;
 	const response = {
 		data: {
