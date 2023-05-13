@@ -14,7 +14,10 @@ import nsfw from '../assets/json/nsfw.json' assert { type: 'json' };
 
 export async function nsfwCommand(interaction: APIApplicationCommandInteraction, category: string, visible?: boolean) {
 	try {
-		const raw = await fetch(`https://nekobot.xyz/api/image?type=${category}`, { method: 'GET' });
+		const raw = await fetch(`https://nekobot.xyz/api/image?type=${category}`, {
+			method: 'GET',
+			headers: { 'User-Agent': 'Axios 1.3.6' }
+		});
 		const response: any = await raw.json();
 
 		const button: APIActionRowComponent<APIMessageActionRowComponent> = {
