@@ -1,6 +1,7 @@
-name = "aina"
+name = "kana"
 main = "./dist/index.js"
-compatibility_date = "2022-11-30"
+compatibility_date = "2023-03-14"
+compatibility_flags = [ "nodejs_compat" ]
 
 node_compat = true
 workers_dev = true
@@ -13,4 +14,4 @@ type = "ESModule"
 globs = [ "**/*.js" ]
 
 [vars]
-CLIENT_NAME = "Vivy"
+CLIENT_NAME = "Kana"

@@ -5,10 +5,11 @@ require_automerge_label = false
 blocking_labels = ["blocked"]
 method = "squash"
 delete_branch_on_merge = true
-notify_on_conflict = true
-optimistic_updates = true
 prioritize_ready_to_merge = true
-do_not_merge = false
+
+[merge.automerge_dependencies]
+versions = ["minor", "patch"]
+usernames = ["renovate"]
 
 [merge.message]
 title = "pull_request_title"
@@ -17,11 +18,6 @@ include_pr_number = true
 body_type = "markdown"
 strip_html_comments = true
 include_coauthors = true
-
-[update]
-always = true
-require_automerge_label = false
-ignored_usernames = ["renovate"]
 
 [approve]
 auto_approve_usernames = ["renovate"]
