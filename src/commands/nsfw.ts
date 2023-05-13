@@ -16,7 +16,7 @@ export async function nsfwCommand(interaction: APIApplicationCommandInteraction,
 	try {
 		const raw = await fetch(`https://nekobot.xyz/api/image?type=${category}`, {
 			method: 'GET',
-			headers: { 'User-Agent': 'Axios 1.3.6' }
+			headers: { 'User-Agent': 'Axios 0.27.1' }
 		});
 		const response: any = await raw.json();
 
@@ -39,8 +39,8 @@ export async function nsfwCommand(interaction: APIApplicationCommandInteraction,
 		};
 
 		return prepareReply({ embeds: [embed], components: [button], ephemeral: !visible });
-	} catch {
-		return prepareReply({ content: 'Nothing found for this search.', ephemeral: true });
+	} catch (error) {
+		return prepareReply({ content: `Nothing found for this search.\n\`\`\`js\n${error}\n\`\`\``, ephemeral: true });
 	}
 }
 
