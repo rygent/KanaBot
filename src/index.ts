@@ -6,6 +6,7 @@ import { logger } from './lib/utils/logger.js';
 import url from 'url';
 import { handleApplicationCommand } from './handling/handleApplicationCommand.js';
 import { handleMessageComponents } from './handling/handleMessageComponents.js';
+import { handleApplicationCommandAutocomplete } from './handling/handleApplicationCommandAutocomplete.js';
 
 const router = Router();
 
@@ -20,6 +21,8 @@ router.post('/interactions', async (request: IRequest, env: any) => {
 			return await handleApplicationCommand(interaction, env);
 		case InteractionType.MessageComponent:
 			return await handleMessageComponents(interaction);
+		case InteractionType.ApplicationCommandAutocomplete:
+			return handleApplicationCommandAutocomplete(interaction);
 		default:
 			logger.error('Unknown Type');
 			return new JsonResponse({ error: 'Unknown Type' }, { status: 400 });
