@@ -5,7 +5,6 @@
     "checkJs": true
   },
   "include": [
-    "tsup.config.ts",
     "src/**/*.ts",
     "scripts"
   ]
