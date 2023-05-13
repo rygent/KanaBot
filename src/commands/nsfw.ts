@@ -14,10 +14,7 @@ import nsfw from '../assets/json/nsfw.json' assert { type: 'json' };
 
 export async function nsfwCommand(interaction: APIApplicationCommandInteraction, category: string, visible?: boolean) {
 	try {
-		const raw = await fetch(`https://nekobot.xyz/api/image?type=${category}`, {
-			method: 'GET',
-			headers: { 'User-Agent': 'Axios 0.27.1' }
-		});
+		const raw = await fetch(`https://elvia.vercel.app/api/v1/img/nsfw?type=${category}`, { method: 'GET' });
 		const response: any = await raw.json();
 
 		const button: APIActionRowComponent<APIMessageActionRowComponent> = {
@@ -27,14 +24,14 @@ export async function nsfwCommand(interaction: APIApplicationCommandInteraction,
 					type: ComponentType.Button,
 					style: ButtonStyle.Link,
 					label: 'Open in Browser',
-					url: response.message
+					url: response.url
 				}
 			]
 		};
 
 		const embed: APIEmbed = {
 			color: 3092790,
-			image: { url: response.message },
+			image: { url: response.url },
 			footer: { text: `Powered by ${interaction.user?.username}` }
 		};
 

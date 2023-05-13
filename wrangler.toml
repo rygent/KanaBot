@@ -14,3 +14,4 @@ globs = [ "**/*.js" ]
 
 [vars]
 CLIENT_NAME = "Kana"
+CLIENT_VERSION = "1.0.0"
