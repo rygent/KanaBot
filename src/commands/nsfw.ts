@@ -12,7 +12,7 @@ import { prepareAutocomplete, prepareReply } from '../lib/utils/respond.js';
 import { transformInteraction } from '../lib/utils/interactionOptions.js';
 import nsfw from '../assets/json/nsfw.json' assert { type: 'json' };
 
-export async function nsfwCommand(interaction: APIApplicationCommandInteraction, category: string, visible?: boolean) {
+export async function nsfwCommand(env: any, category: string, visible?: boolean) {
 	try {
 		const raw = await fetch(`https://elvia.vercel.app/api/v1/img/nsfw?type=${category}`, { method: 'GET' });
 		const response: any = await raw.json();
@@ -32,12 +32,12 @@ export async function nsfwCommand(interaction: APIApplicationCommandInteraction,
 		const embed: APIEmbed = {
 			color: 3092790,
 			image: { url: response.url },
-			footer: { text: `Powered by ${interaction.user?.username}` }
+			footer: { text: `Powered by ${env.CLIENT_NAME}` }
 		};
 
 		return prepareReply({ embeds: [embed], components: [button], ephemeral: !visible });
 	} catch (error) {
-		return prepareReply({ content: `Nothing found for this search.\n\`\`\`js\n${error}\n\`\`\``, ephemeral: true });
+		return prepareReply({ content: 'Nothing found for this search.', ephemeral: true });
 	}
 }
 

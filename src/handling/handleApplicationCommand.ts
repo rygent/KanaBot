@@ -27,7 +27,7 @@ export async function handleApplicationCommand(interaction: APIApplicationComman
 				return mangaCommand(interaction, castArgs.search);
 			case 'nsfw':
 				castArgs = args as ArgumentsOf<typeof NsfwCommand>;
-				return nsfwCommand(interaction, castArgs.category, castArgs.visible);
+				return nsfwCommand(env, castArgs.category, castArgs.visible);
 		}
 	}
 }
