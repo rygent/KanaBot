@@ -24,7 +24,7 @@
     "discord-api-types": "^0.37.46",
     "discord-interactions": "^3.4.0",
     "dotenv-cra": "^3.0.3",
-    "glob": "^10.2.7",
+    "glob": "^10.3.0",
     "globby": "^13.2.0",
     "he": "^1.2.0",
     "itty-router": "^3.0.12",
