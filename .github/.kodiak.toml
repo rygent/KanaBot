@@ -7,6 +7,7 @@ method = "squash"
 delete_branch_on_merge = true
 optimistic_updates = true
 prioritize_ready_to_merge = true
+do_not_merge = true
 
 [merge.message]
 title = "pull_request_title"
@@ -14,3 +15,7 @@ body = "github_default"
 include_pr_number = true
 body_type = "markdown"
 strip_html_comments = true
+
+[update]
+always = true
+require_automerge_label = false
