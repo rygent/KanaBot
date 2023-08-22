@@ -24,3 +24,7 @@ strip_html_comments = true
 always = true
 require_automerge_label = false
 ignored_usernames = ["renovate"]
+
+[approve]
+auto_approve_usernames = ["rygent"]
+auto_approve_labels = ["dependencies"]
