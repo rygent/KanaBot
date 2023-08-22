@@ -18,7 +18,3 @@ body = "github_default"
 include_pr_number = true
 body_type = "markdown"
 strip_html_comments = true
-
-[update]
-always = true
-require_automerge_label = false
