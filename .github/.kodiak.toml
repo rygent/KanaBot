@@ -9,6 +9,10 @@ optimistic_updates = true
 prioritize_ready_to_merge = true
 do_not_merge = true
 
+[merge.automerge_dependencies]
+versions = ["minor", "patch"]
+usernames = ["renovate"]
+
 [merge.message]
 title = "pull_request_title"
 body = "github_default"
@@ -19,3 +23,4 @@ strip_html_comments = true
 [update]
 always = true
 require_automerge_label = false
+ignored_usernames = ["renovate"]
