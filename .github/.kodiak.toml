@@ -5,6 +5,7 @@ require_automerge_label = false
 blocking_labels = ["blocked"]
 method = "squash"
 delete_branch_on_merge = true
+optimistic_updates = true
 prioritize_ready_to_merge = true
 
 [merge.automerge_dependencies]
@@ -17,8 +18,7 @@ body = "github_default"
 include_pr_number = true
 body_type = "markdown"
 strip_html_comments = true
-include_coauthors = true
 
-[approve]
-auto_approve_usernames = ["renovate"]
-auto_approve_labels = ["dependencies"]
+[update]
+always = true
+require_automerge_label = false
