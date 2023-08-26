@@ -36,7 +36,7 @@
     "@swc/cli": "^0.1.62",
     "@swc/core": "^1.3.80",
     "@types/he": "^1.2.0",
-    "@types/node": "^20.5.3",
+    "@types/node": "^20.5.6",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.47.0",
