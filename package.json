@@ -45,7 +45,7 @@
     "prettier": "^3.0.2",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6",
-    "wrangler": "^3.5.1"
+    "wrangler": "^3.6.0"
   },
   "packageManager": "yarn@3.6.3"
 }
