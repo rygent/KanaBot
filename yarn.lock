@@ -2793,10 +2793,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"itty-router@npm:^4.0.22":
-  version: 4.0.22
-  resolution: "itty-router@npm:4.0.22"
-  checksum: a665d80ffbbc50c82f929ddc6f76e48b79b3192cd71b1e2815998e8ad62806a5c5e022f53eca0df3eddefef7f092ad71f93f2eabeabd58bcd316d975f69f2113
+"itty-router@npm:^4.0.23":
+  version: 4.0.23
+  resolution: "itty-router@npm:4.0.23"
+  checksum: 1bd5da475e5316fcdd50bb312e98bbc5787edc0695b3a21ea3c6b2a5e178e7c59eb7a68ae7bd97bafa6e3e1131cac3e1993c9a8f8f5ff7e6e637fdaa4a1efa9e
   languageName: node
   linkType: hard
 
@@ -2870,7 +2870,7 @@ __metadata:
     glob: ^10.3.4
     globby: ^13.2.2
     he: ^1.2.0
-    itty-router: ^4.0.22
+    itty-router: ^4.0.23
     moment: ^2.29.4
     pino: ^8.15.1
     prettier: ^3.0.3
