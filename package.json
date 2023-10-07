@@ -29,7 +29,7 @@
     "he": "^1.2.0",
     "itty-router": "^4.0.23",
     "moment": "^2.29.4",
-    "pino": "^8.15.3"
+    "pino": "^8.15.6"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230922.0",
