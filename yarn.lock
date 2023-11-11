@@ -1756,27 +1756,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-cra@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "dotenv-cra@npm:3.0.3"
-  dependencies:
-    dotenv: "npm:^10.0.0"
-    dotenv-expand: "npm:^5.1.0"
-  checksum: ce3ee40d6c660fc6c0709ca600f92d7dfa1c684499b36383a1afb9b9cf63c6879ad9892d8ed7a7f633ec3ea7c59a5a41650f1d8e4fd47ee3e5ae467bac592423
-  languageName: node
-  linkType: hard
-
-"dotenv-expand@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "dotenv-expand@npm:5.1.0"
-  checksum: 24ac633de853ef474d0421cc639328b7134109c8dc2baaa5e3afb7495af5e9237136d7e6971e55668e4dce915487eb140967cdd2b3e99aa439e0f6bf8b56faeb
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "dotenv@npm:10.0.0"
-  checksum: 2d8d4ba64bfaff7931402aa5e8cbb8eba0acbc99fe9ae442300199af021079eafa7171ce90e150821a5cb3d74f0057721fbe7ec201a6044b68c8a7615f8c123f
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: b95ff1bbe624ead85a3cd70dbd827e8e06d5f05f716f2d0cbc476532d54c7c9469c3bc4dd93ea519f6ad711cb522c00ac9a62b6eb340d5affae8008facc3fbd7
   languageName: node
   linkType: hard
 
@@ -3391,7 +3374,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^5.62.0"
     discord-api-types: "npm:^0.37.63"
     discord-interactions: "npm:^3.4.0"
-    dotenv-cra: "npm:^3.0.3"
+    dotenv: "npm:^16.3.1"
     eslint: "npm:^8.53.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-import: "npm:^2.29.0"

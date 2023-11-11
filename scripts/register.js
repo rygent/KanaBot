@@ -5,8 +5,7 @@ import { Command } from 'commander';
 import { globby } from 'globby';
 import path from 'node:path';
 import createLogger from 'pino';
-import dotenv from 'dotenv-cra';
-dotenv.config();
+import 'dotenv/config';
 
 const logger = createLogger();
 const program = new Command();
