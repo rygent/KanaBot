@@ -126,6 +126,7 @@ dist
 
 # Miscellaneous files
 .DS_Store
+.dev.vars
 
 # yarn v2
 .yarn/cache
