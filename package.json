@@ -10,7 +10,7 @@
     "build": "rimraf ./dist && swc ./src --out-dir ./dist --copy-files",
     "dev": "wrangler dev ./dist/index.js",
     "register": "node ./scripts/register.js",
-    "publish": "wrangler publish",
+    "deploy": "wrangler deploy",
     "update": "yarn upgrade-interactive"
   },
   "license": "GPL-3.0",
