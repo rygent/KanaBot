@@ -1,6 +1,5 @@
 import {
 	APIActionRowComponent,
-	APIApplicationCommandInteraction,
 	APIApplicationCommandInteractionDataOption,
 	APIEmbed,
 	APIMessageActionRowComponent,

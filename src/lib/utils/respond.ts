@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/return-await */
 import {
 	AllowedMentionsTypes,
 	APIApplicationCommandInteraction,
@@ -11,6 +12,7 @@ import {
 	Routes
 } from 'discord-api-types/v10';
 import { isObject, type NonNullObject } from '@sapphire/utilities';
+import { ResponseInit } from 'undici-types';
 
 export class JsonResponse extends Response {
 	public constructor(body?: NonNullObject | string, init?: ResponseInit | undefined) {
@@ -59,7 +61,7 @@ export function prepareReply(data: {
 	return new JsonResponse(response);
 }
 
-export function prepareAutocomplete(options: APIApplicationCommandOptionChoice<string | number>[]) {
+export function prepareAutocomplete(options: APIApplicationCommandOptionChoice[]) {
 	const response = {
 		data: {
 			choices: options

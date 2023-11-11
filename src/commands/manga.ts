@@ -1,4 +1,3 @@
-/* eslint-disable operator-linebreak, no-extra-parens, indent */
 import {
 	APIActionRowComponent,
 	APIApplicationCommandInteraction,
@@ -9,16 +8,14 @@ import {
 	ComponentType
 } from 'discord-api-types/v10';
 import { Anilist, parseDescription } from '../lib/modules/anilist.js';
-import { prepareDeferUpdate, prepareReply, prepareUpdate } from '../lib/utils/respond.js';
+import { prepareReply, prepareUpdate } from '../lib/utils/respond.js';
 import { cutText } from '@sapphire/utilities';
-import { bold, italic, time, underscore } from '@discordjs/formatters';
-import { DurationFormatter } from '@sapphire/time-utilities';
+import { bold, italic, underscore } from '@discordjs/formatters';
 import moment from 'moment';
 import { formatArray, formatNumber, titleCase } from '../lib/utils/function.js';
 
 const anilist = new Anilist();
 let selectId: string;
-let userId: string;
 
 export async function mangaCommand(interaction: APIApplicationCommandInteraction, search: string) {
 	const response = await anilist.search({ type: 'manga', search, perPage: 25 }).then(
@@ -31,7 +28,6 @@ export async function mangaCommand(interaction: APIApplicationCommandInteraction
 	if (!response?.length) return prepareReply({ content: 'Nothing found for this search.', ephemeral: true });
 
 	selectId = `manga-select-${interaction.id}`;
-	userId = interaction.user?.id as string;
 
 	const select = {
 		type: ComponentType.ActionRow,
@@ -42,11 +38,11 @@ export async function mangaCommand(interaction: APIApplicationCommandInteraction
 				placeholder: 'Select a manga',
 				options: [
 					...response.map((data: any) => ({
-						value: data!.id.toString(),
+						value: data.id.toString(),
 						label:
-							cutText(Object.values(data!.title!).filter((title: any) => title?.length)[0] as string, 1e2) ??
+							cutText(Object.values(data.title!).filter((title: any) => title?.length)[0] as string, 1e2) ??
 							'Unknown Name',
-						...(data!.description?.length && { description: cutText(parseDescription(data!.description), 1e2) })
+						...(data.description?.length && { description: cutText(parseDescription(data.description), 1e2) })
 					}))
 				]
 			}
@@ -114,7 +110,7 @@ export async function mangaComponents(interaction: APIMessageComponentInteractio
 				? [
 						{
 							name: underscore(italic('Characters')),
-							value: formatArray(data.characters.nodes.map((item: any) => item!.name!.full!)),
+							value: formatArray(data.characters.nodes.map((item: any) => item.name!.full!)),
 							inline: false
 						}
 				  ]

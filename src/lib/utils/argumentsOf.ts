@@ -67,7 +67,7 @@ type OptionToObject<O> = O extends {
 	name: infer K;
 	type: infer T;
 	required?: infer R;
-	// eslint-disable-next-line no-shadow
+	// eslint-disable-next-line no-shadow, @typescript-eslint/no-shadow
 	options?: infer O;
 	choices?: infer C;
 }

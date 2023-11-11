@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-catch */
 import he from 'he';
 const { decode } = he;
 

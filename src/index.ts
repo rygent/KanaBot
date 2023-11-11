@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/return-await */
 import { APIInteraction, InteractionType } from 'discord-api-types/v10';
 import { verifyKey } from 'discord-interactions';
 import { Router, IRequest } from 'itty-router';

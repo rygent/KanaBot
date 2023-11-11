@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/return-await */
 import { APIMessageComponentInteraction, ComponentType } from 'discord-api-types/v10';
 import { animeComponents } from '../commands/anime.js';
 import { mangaComponents } from '../commands/manga.js';
@@ -14,6 +15,7 @@ export async function handleMessageComponents(interaction: APIMessageComponentIn
 			if (data.custom_id.startsWith('manga-select-')) {
 				return await mangaComponents(interaction, data.values[0]);
 			}
+			break;
 		case ComponentType.Button:
 		case ComponentType.UserSelect:
 		case ComponentType.RoleSelect:
