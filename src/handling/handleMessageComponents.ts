@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/return-await */
-import { APIMessageComponentInteraction, ComponentType } from 'discord-api-types/v10';
+import { type APIMessageComponentInteraction, ComponentType } from 'discord-api-types/v10';
 import { animeComponents } from '../commands/anime.js';
 import { mangaComponents } from '../commands/manga.js';
 
@@ -9,11 +9,11 @@ export async function handleMessageComponents(interaction: APIMessageComponentIn
 	switch (data.component_type) {
 		case ComponentType.StringSelect:
 			if (data.custom_id.startsWith('anime-select-')) {
-				return await animeComponents(interaction, data.values[0]);
+				return await animeComponents(interaction, data.values[0]!);
 			}
 
 			if (data.custom_id.startsWith('manga-select-')) {
-				return await mangaComponents(interaction, data.values[0]);
+				return await mangaComponents(interaction, data.values[0]!);
 			}
 			break;
 		case ComponentType.Button:

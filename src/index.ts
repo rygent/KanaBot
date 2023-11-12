@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/return-await */
-import { APIInteraction, InteractionType } from 'discord-api-types/v10';
+import { type APIInteraction, InteractionType } from 'discord-api-types/v10';
 import { verifyKey } from 'discord-interactions';
-import { Router, IRequest } from 'itty-router';
+import { Router, type IRequest } from 'itty-router';
 import { JsonResponse, prepareAck } from './lib/utils/respond.js';
 import { logger } from './lib/utils/logger.js';
 import url from 'url';
@@ -11,6 +11,7 @@ import { handleApplicationCommandAutocomplete } from './handling/handleApplicati
 
 const router = Router();
 
+// @ts-expect-error
 router.get('/', (request: IRequest, env: any) => new Response(`👋 ${env.DISCORD_APPLICATION_ID}`));
 
 router.post('/interactions', async (request: IRequest, env: any) => {

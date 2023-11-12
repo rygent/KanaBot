@@ -1,4 +1,4 @@
-import { APIApplicationCommandAutocompleteInteraction } from 'discord-api-types/v10';
+import { type APIApplicationCommandAutocompleteInteraction } from 'discord-api-types/v10';
 import { nsfwAutocomplete } from '../commands/nsfw.js';
 
 type CommandAutoCompleteName = 'nsfw';

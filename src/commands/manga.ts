@@ -1,9 +1,9 @@
 import {
-	APIActionRowComponent,
-	APIApplicationCommandInteraction,
-	APIEmbed,
-	APIMessageActionRowComponent,
-	APIMessageComponentInteraction,
+	type APIActionRowComponent,
+	type APIApplicationCommandInteraction,
+	type APIEmbed,
+	type APIMessageActionRowComponent,
+	type APIMessageComponentInteraction,
 	ButtonStyle,
 	ComponentType
 } from 'discord-api-types/v10';

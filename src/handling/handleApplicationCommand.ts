@@ -1,5 +1,5 @@
-import { APIApplicationCommandInteraction, ApplicationCommandType } from 'discord-api-types/v10';
-import { ArgumentsOf } from '../lib/utils/argumentsOf.js';
+import { type APIApplicationCommandInteraction, ApplicationCommandType } from 'discord-api-types/v10';
+import type { ArgumentsOf } from '../lib/utils/argumentsOf.js';
 import { transformInteraction } from '../lib/utils/interactionOptions.js';
 import AnimeCommand from '../interactions/anime.js';
 import MangaCommand from '../interactions/manga.js';

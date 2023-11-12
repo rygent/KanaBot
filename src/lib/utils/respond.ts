@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/return-await */
 import {
 	AllowedMentionsTypes,
-	APIApplicationCommandInteraction,
-	APIApplicationCommandOptionChoice,
-	APIEmbed,
-	APIInteractionResponse,
-	APIMessageComponent,
-	APIMessageComponentInteraction,
+	type APIApplicationCommandInteraction,
+	type APIApplicationCommandOptionChoice,
+	type APIEmbed,
+	type APIInteractionResponse,
+	type APIMessageComponent,
+	type APIMessageComponentInteraction,
 	InteractionResponseType,
 	MessageFlags,
 	Routes
 } from 'discord-api-types/v10';
 import { isObject, type NonNullObject } from '@sapphire/utilities';
-import { ResponseInit } from 'undici-types';
 
 export class JsonResponse extends Response {
+	// eslint-disable-next-line no-undef
 	public constructor(body?: NonNullObject | string, init?: ResponseInit | undefined) {
 		if (isObject(body)) {
 			body = JSON.stringify(body);
