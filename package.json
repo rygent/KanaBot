@@ -16,7 +16,7 @@
   "license": "GPL-3.0",
   "private": true,
   "dependencies": {
-    "@discordjs/formatters": "^0.3.2",
+    "@discordjs/formatters": "^0.3.3",
     "@discordjs/rest": "^2.0.1",
     "@rygent/anilist": "^1.4.0",
     "@sapphire/time-utilities": "^1.7.10",
