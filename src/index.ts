@@ -2,12 +2,12 @@
 import { type APIInteraction, InteractionType } from 'discord-api-types/v10';
 import { verifyKey } from 'discord-interactions';
 import { Router, type IRequest } from 'itty-router';
-import { JsonResponse, prepareAck } from './lib/utils/respond.js';
-import { logger } from './lib/utils/logger.js';
+import { JsonResponse, prepareAck } from '#lib/utils/respond.js';
+import { logger } from '#lib/utils/logger.js';
 import url from 'url';
-import { handleApplicationCommand } from './handling/handleApplicationCommand.js';
-import { handleMessageComponents } from './handling/handleMessageComponents.js';
-import { handleApplicationCommandAutocomplete } from './handling/handleApplicationCommandAutocomplete.js';
+import { handleApplicationCommand } from '#handling/handleApplicationCommand.js';
+import { handleMessageComponents } from '#handling/handleMessageComponents.js';
+import { handleApplicationCommandAutocomplete } from '#handling/handleApplicationCommandAutocomplete.js';
 
 const router = Router();
 

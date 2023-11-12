@@ -6,10 +6,10 @@ import {
 	ButtonStyle,
 	ComponentType
 } from 'discord-api-types/v10';
-import NsfwCommand from '../interactions/nsfw.js';
-import { prepareAutocomplete, prepareReply } from '../lib/utils/respond.js';
-import { transformInteraction } from '../lib/utils/interactionOptions.js';
-import nsfw from '../assets/json/nsfw.json' assert { type: 'json' };
+import NsfwCommand from '#interactions/nsfw.js';
+import { prepareAutocomplete, prepareReply } from '#lib/utils/respond.js';
+import { transformInteraction } from '#lib/utils/interactionOptions.js';
+import nsfw from '#assets/json/nsfw.json' assert { type: 'json' };
 
 export async function nsfwCommand(env: any, category: string, visible?: boolean) {
 	try {

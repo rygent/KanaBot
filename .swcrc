@@ -12,6 +12,14 @@
       "decorators": false,
       "dynamicImport": false
     },
+    "baseUrl": "./",
+    "paths": {
+      "#assets/*": ["./src/assets/*"],
+      "#commands/*": ["./src/commands/*"],
+      "#handling/*": ["./src/handling/*"],
+      "#interactions/*": ["./src/interactions/*"],
+      "#lib/*": ["./src/lib/*"]
+    },
     "experimental": {
       "keepImportAttributes": true,
       "emitAssertForImportAttributes": true

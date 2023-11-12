@@ -7,12 +7,12 @@ import {
 	ButtonStyle,
 	ComponentType
 } from 'discord-api-types/v10';
-import { Anilist, parseDescription } from '../lib/modules/anilist.js';
-import { prepareReply, prepareUpdate } from '../lib/utils/respond.js';
+import { Anilist, parseDescription } from '#lib/modules/anilist.js';
+import { prepareReply, prepareUpdate } from '#lib/utils/respond.js';
 import { cutText } from '@sapphire/utilities';
 import { bold, italic, underscore } from '@discordjs/formatters';
 import moment from 'moment';
-import { formatArray, formatNumber, titleCase } from '../lib/utils/function.js';
+import { formatArray, formatNumber, titleCase } from '#lib/utils/function.js';
 
 const anilist = new Anilist();
 let selectId: string;

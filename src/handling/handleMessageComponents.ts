@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/return-await */
 import { type APIMessageComponentInteraction, ComponentType } from 'discord-api-types/v10';
-import { animeComponents } from '../commands/anime.js';
-import { mangaComponents } from '../commands/manga.js';
+import { animeComponents } from '#commands/anime.js';
+import { mangaComponents } from '#commands/manga.js';
 
 export async function handleMessageComponents(interaction: APIMessageComponentInteraction) {
 	const { data } = interaction;
