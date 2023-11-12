@@ -70,12 +70,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/formatters@npm:^0.3.2":
-  version: 0.3.2
-  resolution: "@discordjs/formatters@npm:0.3.2"
+"@discordjs/formatters@npm:^0.3.3":
+  version: 0.3.3
+  resolution: "@discordjs/formatters@npm:0.3.3"
   dependencies:
-    discord-api-types: "npm:0.37.50"
-  checksum: 933cbaa964bdbbef5dfd7099ed029a333139af44d6c91b601a44cd50537f64498224a4ad4025c7db6e529c93851fd35bc0a91c514524bb498f85c44c582ec0bd
+    discord-api-types: "npm:0.37.61"
+  checksum: 1833c2e20b87aa6ae03202502a64d5ae235ee6a25feb41786bb86b7414fac7c59e518f99f2a60b15ad713165c91e16f17b3e8024898d6a3cd3df9f3e94488cd1
   languageName: node
   linkType: hard
 
@@ -1723,6 +1723,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"discord-api-types@npm:0.37.61":
+  version: 0.37.61
+  resolution: "discord-api-types@npm:0.37.61"
+  checksum: ce3d28df71df26fbd32f7a13c8b5c77ff3f9ad3612e8bbd44236a498388b73e34e39e1c5f6c4652950a1f54024f934275e0f10e49c2dcf3aafe58a1eb3776b74
+  languageName: node
+  linkType: hard
+
 "discord-api-types@npm:^0.37.63":
   version: 0.37.63
   resolution: "discord-api-types@npm:0.37.63"
@@ -3345,7 +3352,7 @@ __metadata:
   resolution: "kana@workspace:."
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20231025.0"
-    "@discordjs/formatters": "npm:^0.3.2"
+    "@discordjs/formatters": "npm:^0.3.3"
     "@discordjs/rest": "npm:^2.0.1"
     "@rygent/anilist": "npm:^1.4.0"
     "@sapphire/time-utilities": "npm:^1.7.10"
