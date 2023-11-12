@@ -15,7 +15,7 @@ const router = Router();
 router.get('/', (request: IRequest, env: any) => new Response(`👋 ${env.DISCORD_APPLICATION_ID}`));
 
 router.post('/interactions', async (request: IRequest, env: any) => {
-	const interaction = (await request.json()) as APIInteraction;
+	const interaction = await request.json<APIInteraction>();
 	switch (interaction.type) {
 		case InteractionType.Ping:
 			return prepareAck();
