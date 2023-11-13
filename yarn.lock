@@ -452,14 +452,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rygent/anilist@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@rygent/anilist@npm:1.4.0"
+"@rygent/anilist@npm:^1.5.0-next.75222a2.0":
+  version: 1.5.0-next.75222a2.0
+  resolution: "@rygent/anilist@npm:1.5.0-next.75222a2.0"
   dependencies:
-    axios: "npm:^1.6.0"
+    axios: "npm:^1.6.1"
     graphql: "npm:^16.8.1"
     he: "npm:^1.2.0"
-  checksum: e766ad47e173f371f0c4c7d09a0e2c35a130dc05b4eec0f8dac2eb15429ec1e34e189a8aad2934c98b0775d5104286335f6737da136286b4ca29322443e57eaf
+  checksum: e577e4414d91a8b4518340a57fec6cbe4bb2f76bb8822895adf3b54ab29f3f2d1128edc05f8f5fe6b66ec078c01bffb4eaf3fe83f79770847e5e1a109d153159
   languageName: node
   linkType: hard
 
@@ -1167,7 +1167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.0":
+"axios@npm:^1.6.1":
   version: 1.6.1
   resolution: "axios@npm:1.6.1"
   dependencies:
@@ -3182,7 +3182,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:^4.20231025.0"
     "@discordjs/formatters": "npm:^0.3.3"
     "@discordjs/rest": "npm:^2.1.0"
-    "@rygent/anilist": "npm:^1.4.0"
+    "@rygent/anilist": "npm:^1.5.0-next.75222a2.0"
     "@sapphire/time-utilities": "npm:^1.7.10"
     "@sapphire/utilities": "npm:^3.13.0"
     "@swc/cli": "npm:^0.1.62"

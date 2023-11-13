@@ -18,7 +18,7 @@
   "dependencies": {
     "@discordjs/formatters": "^0.3.3",
     "@discordjs/rest": "^2.1.0",
-    "@rygent/anilist": "^1.4.0",
+    "@rygent/anilist": "^1.5.0-next.75222a2.0",
     "@sapphire/time-utilities": "^1.7.10",
     "@sapphire/utilities": "^3.13.0",
     "discord-api-types": "^0.37.63",
