@@ -7,7 +7,7 @@ import {
 	ButtonStyle,
 	ComponentType
 } from 'discord-api-types/v10';
-import { Anilist, parseDescription, type AnilistResponse } from '@rygent/anilist';
+import { Anilist, parseDescription } from '@rygent/anilist';
 import { prepareReply, prepareUpdate } from '#lib/utils/respond.js';
 import { cutText } from '@sapphire/utilities';
 import { bold, italic, underscore } from '@discordjs/formatters';
@@ -56,7 +56,7 @@ export async function mangaCommand(interaction: APIApplicationCommandInteraction
 }
 
 export async function mangaComponents(interaction: APIMessageComponentInteraction, search: string) {
-	const data = await anilist.getManga({ id: Number(search) }).then((res: AnilistResponse) => res.data.Media);
+	const data = await anilist.getManga({ id: Number(search) }).then(({ data: { Media } }) => Media);
 
 	const startDate = !Object.values(data.startDate!).some((value) => value === null)
 		? Object.values(data.startDate!).join('/')
