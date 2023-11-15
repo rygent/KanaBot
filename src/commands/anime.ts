@@ -7,25 +7,19 @@ import {
 	ButtonStyle,
 	ComponentType
 } from 'discord-api-types/v10';
-import { Anilist, parseDescription } from '@rygent/anilist';
 import { prepareReply, prepareUpdate } from '#lib/utils/respond.js';
 import { cutText } from '@sapphire/utilities';
 import { bold, italic, time, underscore } from '@discordjs/formatters';
 import { DurationFormatter } from '@sapphire/time-utilities';
 import moment from 'moment';
 import { formatArray, formatNumber, titleCase } from '#lib/utils/function.js';
+import { Anilist } from '@rygent/anilist';
 
 const anilist = new Anilist();
 let selectId: string;
 
 export async function animeCommand(interaction: APIApplicationCommandInteraction, search: string) {
-	const response = await anilist.search({ type: 'anime', search, perPage: 25 }).then(
-		({
-			data: {
-				Page: { media }
-			}
-		}) => media
-	);
+	const response = await anilist.media.search({ type: 'Anime', search, perPage: 25 });
 	if (!response?.length) return prepareReply({ content: 'Nothing found for this search.', ephemeral: true });
 
 	selectId = `anime-select-${interaction.id}`;
@@ -38,12 +32,11 @@ export async function animeCommand(interaction: APIApplicationCommandInteraction
 				custom_id: selectId,
 				placeholder: 'Select an anime',
 				options: [
-					...response.map((data: any) => ({
-						value: data.id.toString(),
+					...response.map((data) => ({
+						value: data!.id.toString(),
 						label:
-							cutText(Object.values(data.title!).filter((title: any) => title?.length)[0] as string, 1e2) ??
-							'Unknown Name',
-						...(data.description?.length && { description: cutText(parseDescription(data.description), 1e2) })
+							cutText(Object.values(data!.title!).filter((title) => title?.length)[0] as string, 1e2) ?? 'Unknown Name',
+						...(data!.description?.length && { description: cutText(data!.description, 1e2) })
 					}))
 				]
 			}
@@ -57,7 +50,7 @@ export async function animeCommand(interaction: APIApplicationCommandInteraction
 }
 
 export async function animeComponents(interaction: APIMessageComponentInteraction, search: string) {
-	const data = await anilist.getAnime({ id: Number(search) }).then(({ data: { Media } }) => Media);
+	const data = await anilist.media.anime({ id: Number(search) });
 
 	const startDate = !Object.values(data.startDate!).some((value) => value === null)
 		? Object.values(data.startDate!).join('/')
@@ -81,8 +74,8 @@ export async function animeComponents(interaction: APIMessageComponentInteractio
 	const embed = {
 		color: 3092790,
 		author: { name: 'Anilist', icon_url: 'https://i.imgur.com/B48olfM.png', url: 'https://anilist.co/' },
-		title: Object.values(data.title!).filter((title: any) => title?.length)[0],
-		...(data.description?.length && { description: cutText(parseDescription(data.description), 512) }),
+		title: Object.values(data.title!).filter((title) => title?.length)[0],
+		...(data.description?.length && { description: cutText(data.description, 512) }),
 		fields: [
 			{
 				name: underscore(italic('Detail')),
@@ -113,18 +106,18 @@ export async function animeComponents(interaction: APIMessageComponentInteractio
 				? [
 						{
 							name: underscore(italic('Characters')),
-							value: formatArray(data.characters.nodes.map((item: any) => item.name!.full!)),
+							value: formatArray(data.characters.nodes.map((item) => item!.name!.full!)),
 							inline: false
 						}
 				  ]
 				: []),
-			...(data.externalLinks?.filter((item: any) => item?.type === 'STREAMING')?.length
+			...(data.externalLinks?.filter((item) => item?.type === 'STREAMING')?.length
 				? [
 						{
 							name: underscore(italic('Networks')),
 							value: data.externalLinks
-								.filter((item: any) => item?.type === 'STREAMING')
-								.map((item: any) => `[${item?.site}](${item?.url})`)
+								.filter((item) => item?.type === 'STREAMING')
+								.map((item) => `[${item?.site}](${item?.url})`)
 								.join(', '),
 							inline: false
 						}
