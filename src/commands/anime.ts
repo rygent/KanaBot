@@ -56,7 +56,7 @@ export async function animeComponents(interaction: APIMessageComponentInteractio
 	);
 
 	const embed = new EmbedBuilder()
-		.setColor(3092790)
+		.setColor(0x2b2d31)
 		.setAuthor({ name: 'Anilist', iconURL: 'https://i.imgur.com/B48olfM.png', url: 'https://anilist.co/' })
 		.setTitle(Object.values(data.title!).filter((title) => title?.length)[0])
 		.addFields({

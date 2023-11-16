@@ -15,7 +15,7 @@ export async function nsfwCommand(env: any, category: string, visible?: boolean)
 		);
 
 		const embed = new EmbedBuilder()
-			.setColor(3092790)
+			.setColor(0x2b2d31)
 			.setImage(response.url)
 			.setFooter({ text: `Powered by ${env.CLIENT_NAME}` });
 
