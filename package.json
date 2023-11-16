@@ -16,6 +16,7 @@
   "license": "GPL-3.0",
   "private": true,
   "dependencies": {
+    "@discordjs/builders": "^1.7.0",
     "@discordjs/formatters": "^0.3.3",
     "@discordjs/rest": "^2.1.0",
     "@rygent/anilist": "^1.5.0-next.f50a2bb.0",

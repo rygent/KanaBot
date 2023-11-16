@@ -63,6 +63,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@discordjs/builders@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "@discordjs/builders@npm:1.7.0"
+  dependencies:
+    "@discordjs/formatters": "npm:^0.3.3"
+    "@discordjs/util": "npm:^1.0.2"
+    "@sapphire/shapeshift": "npm:^3.9.3"
+    discord-api-types: "npm:0.37.61"
+    fast-deep-equal: "npm:^3.1.3"
+    ts-mixer: "npm:^6.0.3"
+    tslib: "npm:^2.6.2"
+  checksum: 6d2264e68fb4396daded4d33a555d0a1fb71b2e7ad8dd28e8d668391204abd889abfe90e8118b940825ebc9765164616248a551e110953a46dc4696054946f8c
+  languageName: node
+  linkType: hard
+
 "@discordjs/collection@npm:^2.0.0":
   version: 2.0.0
   resolution: "@discordjs/collection@npm:2.0.0"
@@ -481,6 +496,16 @@ __metadata:
   version: 1.1.0
   resolution: "@sapphire/duration@npm:1.1.0"
   checksum: 7ee5366a7fa0c0d682e9e183a7fda3d5f4596f97e0915bd3fb6e9d5e51667b562141644d54472803f95ee9100bc70c35069557f94292aed14a6afc63a2c037d3
+  languageName: node
+  linkType: hard
+
+"@sapphire/shapeshift@npm:^3.9.3":
+  version: 3.9.3
+  resolution: "@sapphire/shapeshift@npm:3.9.3"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    lodash: "npm:^4.17.21"
+  checksum: 6d096ca3a3abac5bfbc38e51da3c4bb1d0bdb81cf2f5e4ab6fae3621d73f3cdbb1acf337b932296d84b780814f90c6a6d8553d533883197c15d9673e845cfeda
   languageName: node
   linkType: hard
 
@@ -3123,6 +3148,7 @@ __metadata:
   resolution: "kana@workspace:."
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20231025.0"
+    "@discordjs/builders": "npm:^1.7.0"
     "@discordjs/formatters": "npm:^0.3.3"
     "@discordjs/rest": "npm:^2.1.0"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
@@ -3185,6 +3211,13 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: 402fa16a1edd7538de5b5903a90228aa48eb5533986ba7fa26606a49db2572bf414ff73a2c9f5d5fd36b31c46a5d5c7e1527749c07cbcf965ccff5fbdf32c506
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash@npm:4.17.21"
+  checksum: d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
   languageName: node
   linkType: hard
 
@@ -4755,6 +4788,13 @@ __metadata:
   peerDependencies:
     typescript: ">=4.2.0"
   checksum: 9408338819c3aca2a709f0bc54e3f874227901506cacb1163612a6c8a43df224174feb965a5eafdae16f66fc68fd7bfee8d3275d0fa73fbb8699e03ed26520c9
+  languageName: node
+  linkType: hard
+
+"ts-mixer@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "ts-mixer@npm:6.0.3"
+  checksum: 9e459c5d91f42039e9bafd4056e61d63ba82306381074c6b42f07bdac3014e5f2fdebb02cd9bd171547f2952210a9e3d3f05b5e6e121a8e185438a3a1a46f234
   languageName: node
   linkType: hard
 

@@ -1,11 +1,5 @@
-import {
-	type APIActionRowComponent,
-	type APIApplicationCommandInteractionDataOption,
-	type APIEmbed,
-	type APIMessageActionRowComponent,
-	ButtonStyle,
-	ComponentType
-} from 'discord-api-types/v10';
+import { type APIApplicationCommandInteractionDataOption, ButtonStyle } from 'discord-api-types/v10';
+import { ActionRowBuilder, ButtonBuilder, EmbedBuilder } from '@discordjs/builders';
 import NsfwCommand from '#interactions/nsfw.js';
 import { prepareAutocomplete, prepareReply } from '#lib/utils/respond.js';
 import { transformInteraction } from '#lib/utils/interactionOptions.js';
@@ -16,25 +10,16 @@ export async function nsfwCommand(env: any, category: string, visible?: boolean)
 		const raw = await fetch(`https://elvia.vercel.app/api/v1/img/nsfw?type=${category}`, { method: 'GET' });
 		const response: any = await raw.json();
 
-		const button: APIActionRowComponent<APIMessageActionRowComponent> = {
-			type: ComponentType.ActionRow,
-			components: [
-				{
-					type: ComponentType.Button,
-					style: ButtonStyle.Link,
-					label: 'Open in Browser',
-					url: response.url
-				}
-			]
-		};
+		const button = new ActionRowBuilder<ButtonBuilder>().setComponents(
+			new ButtonBuilder().setStyle(ButtonStyle.Link).setLabel('Open in Browser').setURL(response.url)
+		);
 
-		const embed: APIEmbed = {
-			color: 3092790,
-			image: { url: response.url },
-			footer: { text: `Powered by ${env.CLIENT_NAME}` }
-		};
+		const embed = new EmbedBuilder()
+			.setColor(3092790)
+			.setImage(response.url)
+			.setFooter({ text: `Powered by ${env.CLIENT_NAME}` });
 
-		return prepareReply({ embeds: [embed], components: [button], ephemeral: !visible });
+		return prepareReply({ embeds: [embed.toJSON()], components: [button.toJSON()], ephemeral: !visible });
 	} catch (error) {
 		return prepareReply({ content: 'Nothing found for this search.', ephemeral: true });
 	}
