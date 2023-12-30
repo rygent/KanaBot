@@ -3214,7 +3214,7 @@ __metadata:
     he: "npm:^1.2.0"
     itty-router: "npm:^4.0.25"
     moment: "npm:^2.29.4"
-    pino: "npm:^8.17.1"
+    pino: "npm:^8.17.2"
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.5"
     typescript: "npm:^5.3.3"
@@ -3971,16 +3971,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^8.17.1":
-  version: 8.17.1
-  resolution: "pino@npm:8.17.1"
+"pino@npm:^8.17.2":
+  version: 8.17.2
+  resolution: "pino@npm:8.17.2"
   dependencies:
     atomic-sleep: "npm:^1.0.0"
     fast-redact: "npm:^3.1.1"
     on-exit-leak-free: "npm:^2.1.0"
     pino-abstract-transport: "npm:v1.1.0"
     pino-std-serializers: "npm:^6.0.0"
-    process-warning: "npm:^2.0.0"
+    process-warning: "npm:^3.0.0"
     quick-format-unescaped: "npm:^4.0.3"
     real-require: "npm:^0.2.0"
     safe-stable-stringify: "npm:^2.3.1"
@@ -3988,7 +3988,7 @@ __metadata:
     thread-stream: "npm:^2.0.0"
   bin:
     pino: bin.js
-  checksum: eab640886ae13b92466ebe3d255faf4c3d8012d8b7609dee3cafd8c8d403241ab336ef15283319fc2078f21ad944e1ee8f9cf154bc695c61a583302c40d2045a
+  checksum: 9e55af6cd9d1833a4dbe64924fc73163295acd3c988a9c7db88926669f2574ab7ec607e8487b6dd71dbdad2d7c1c1aac439f37e59233f37220b1a9d88fa2ce01
   languageName: node
   linkType: hard
 
@@ -4031,10 +4031,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"process-warning@npm:^2.0.0":
-  version: 2.3.0
-  resolution: "process-warning@npm:2.3.0"
-  checksum: c9ce917ccf5418d229910fa4f431c6ad16388793e000afb47deeaf8434fb697fc0ad0ca4e1c2dc7adb25cab9d6d759208a0765849fe93e35ecf0444ae2c88e08
+"process-warning@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "process-warning@npm:3.0.0"
+  checksum: 60f3c8ddee586f0706c1e6cb5aa9c86df05774b9330d792d7c8851cf0031afd759d665404d07037e0b4901b55c44a423f07bdc465c63de07d8d23196bb403622
   languageName: node
   linkType: hard
 
