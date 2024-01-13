@@ -3124,10 +3124,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"itty-router@npm:^4.0.26":
-  version: 4.0.26
-  resolution: "itty-router@npm:4.0.26"
-  checksum: 205c794139eb071f873a2972a176fb9a89b0320f7ec3ebccdffda6198af1d738ee379e0f332e2b108176307d61a720b6b9fb7f87cd0cf3bbdf2cb428e22e5f47
+"itty-router@npm:^4.0.27":
+  version: 4.0.27
+  resolution: "itty-router@npm:4.0.27"
+  checksum: f68b0fd1c4374b011f0ad2f8bc4d3443cc45c0ee6b440e998fff587c3f76813b6724f164165713330449c0b00827529a6927f6781a6a954c8fc03889df7b1095
   languageName: node
   linkType: hard
 
@@ -3213,7 +3213,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^5.1.2"
     globby: "npm:^14.0.0"
     he: "npm:^1.2.0"
-    itty-router: "npm:^4.0.26"
+    itty-router: "npm:^4.0.27"
     moment: "npm:^2.30.1"
     pino: "npm:^8.17.2"
     prettier: "npm:^3.0.3"
