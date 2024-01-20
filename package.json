@@ -21,7 +21,7 @@
     "@discordjs/rest": "^2.2.0",
     "@rygent/anilist": "^1.5.0-next.f50a2bb.0",
     "@sapphire/time-utilities": "^1.7.12",
-    "@sapphire/utilities": "^3.15.2",
+    "@sapphire/utilities": "^3.15.3",
     "discord-api-types": "^0.37.67",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.3.1",
