@@ -3213,7 +3213,7 @@ __metadata:
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.5"
     typescript: "npm:^5.3.3"
-    wrangler: "npm:^3.23.0"
+    wrangler: "npm:^3.25.0"
   languageName: unknown
   linkType: soft
 
@@ -3397,9 +3397,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20231218.2":
-  version: 3.20231218.2
-  resolution: "miniflare@npm:3.20231218.2"
+"miniflare@npm:3.20231218.4":
+  version: 3.20231218.4
+  resolution: "miniflare@npm:3.20231218.4"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -3408,14 +3408,14 @@ __metadata:
     exit-hook: "npm:^2.2.1"
     glob-to-regexp: "npm:^0.4.1"
     stoppable: "npm:^1.1.0"
-    undici: "npm:^5.22.1"
+    undici: "npm:^5.28.2"
     workerd: "npm:1.20231218.0"
     ws: "npm:^8.11.0"
     youch: "npm:^3.2.2"
     zod: "npm:^3.20.6"
   bin:
     miniflare: bootstrap.js
-  checksum: 9818abcc138cd3ee83e63bace7c678a385513ce095bd8f565d691eaa93827ecb270daeea89c455dd963b4d4e848fb26411ca8b7c333c5be8b6d8c63a13b895ed
+  checksum: d80a1a1479f169c94880ee0f2c6265a2470439195d4c1c1ff505559a1b3b4844da0c3f7ed40e7c0e06fb1dd5873627e85d8c61338c8c0c26f92fbfb1d54dbf60
   languageName: node
   linkType: hard
 
@@ -4956,12 +4956,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:5.27.2, undici@npm:^5.22.1":
+"undici@npm:5.27.2":
   version: 5.27.2
   resolution: "undici@npm:5.27.2"
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
   checksum: 0cb62c57edc938f242c116e41fb2a74f81ed20e7e2e554cf1ceae548520df0592385b53d444f8cf59e1e10e6b27acd153198d8a2353b3040d0a778a099aac92c
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.28.2":
+  version: 5.28.2
+  resolution: "undici@npm:5.28.2"
+  dependencies:
+    "@fastify/busboy": "npm:^2.0.0"
+  checksum: 34385ad9b3ba85309972ee3c1b426dcd19b94a5a6aa9c54499b5f48436c0ecc13a9b1e756a7c6a953eaefa9f4263890625ece5f2719fd774b0852204f5e4d5f9
   languageName: node
   linkType: hard
 
@@ -5098,9 +5107,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.23.0":
-  version: 3.23.0
-  resolution: "wrangler@npm:3.23.0"
+"wrangler@npm:^3.25.0":
+  version: 3.25.0
+  resolution: "wrangler@npm:3.25.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:^0.2.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -5109,7 +5118,7 @@ __metadata:
     chokidar: "npm:^3.5.3"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20231218.2"
+    miniflare: "npm:3.20231218.4"
     nanoid: "npm:^3.3.3"
     path-to-regexp: "npm:^6.2.0"
     resolve: "npm:^1.22.8"
@@ -5123,7 +5132,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 73a48e01492a0cf62acdfc1a5f7c5db31b8f7d486ec9fcef4580a4e4bd537d29f1932ba9fee434e4831afe1c69085286cfb80e9fc88975c01e289870773825c6
+  checksum: 0fef5b842f0511fb7ab662873fab94d2e72aa6933518a356667bd4e0dc2d6ccf2d712cbba19b9bd4ca59c8e434bb13dcbb5ee2659df7b55e47b6a70d7a9260b6
   languageName: node
   linkType: hard
 
