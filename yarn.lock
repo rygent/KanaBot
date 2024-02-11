@@ -3222,7 +3222,7 @@ __metadata:
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.5"
     typescript: "npm:^5.3.3"
-    wrangler: "npm:^3.26.0"
+    wrangler: "npm:^3.28.1"
   languageName: unknown
   linkType: soft
 
@@ -3406,9 +3406,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240129.0":
-  version: 3.20240129.0
-  resolution: "miniflare@npm:3.20240129.0"
+"miniflare@npm:3.20240129.1":
+  version: 3.20240129.1
+  resolution: "miniflare@npm:3.20240129.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -3424,7 +3424,7 @@ __metadata:
     zod: "npm:^3.20.6"
   bin:
     miniflare: bootstrap.js
-  checksum: 10c0/d787324c6d32d1e7fc070a111f48a3523127ccc185d3e2372631e97d6aac654da4004deaa94c83908ebf806d51bf2f56a5fe692dd055d9378ac59bd83a58ef74
+  checksum: 10c0/509cb9dfc160133ba856e880aa9ec445bba6886367d201f0886cc6e13a6435658e39a2e3bcfecfa9cd2eb1579fcfba3f909628f3b0a1858f8860b9df518a2454
   languageName: node
   linkType: hard
 
@@ -5159,9 +5159,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.26.0":
-  version: 3.26.0
-  resolution: "wrangler@npm:3.26.0"
+"wrangler@npm:^3.28.1":
+  version: 3.28.1
+  resolution: "wrangler@npm:3.28.1"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:^0.2.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -5170,7 +5170,7 @@ __metadata:
     chokidar: "npm:^3.5.3"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20240129.0"
+    miniflare: "npm:3.20240129.1"
     nanoid: "npm:^3.3.3"
     path-to-regexp: "npm:^6.2.0"
     resolve: "npm:^1.22.8"
@@ -5178,13 +5178,18 @@ __metadata:
     selfsigned: "npm:^2.0.1"
     source-map: "npm:0.6.1"
     xxhash-wasm: "npm:^1.0.1"
+  peerDependencies:
+    "@cloudflare/workers-types": ^4.20230914.0
   dependenciesMeta:
     fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@cloudflare/workers-types":
       optional: true
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/3d51b312653f58b465341efa87c6a5bd02f1ca4f3d130c51962d4d76c334689fd5dedffe0331618d7dff9eac348111e7dd1db23e9e5c4a7476db0a8964d0a2b4
+  checksum: 10c0/357503f1a443cf02177b3d4c66bb188b43bbb9b3b1468a05be0e4fe388392a4ef03d2ead1dd5e935fee5d9452a37fd95ded0b80eb5b103fdb068192978e1ce80
   languageName: node
   linkType: hard
 
