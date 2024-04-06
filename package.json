@@ -32,7 +32,7 @@
     "pino": "^8.19.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240329.0",
+    "@cloudflare/workers-types": "^4.20240405.0",
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.12",
     "@types/he": "^1.2.3",
