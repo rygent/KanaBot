@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint . --ext mjs,js,ts --fix",
     "format": "prettier --write \"./{scripts,src}/**/*.{mjs,ts,js}\"",
-    "build": "rimraf ./dist && swc ./src --out-dir ./dist --copy-files",
+    "build": "rimraf ./dist && swc ./src --out-dir ./dist --copy-files --strip-leading-paths",
     "dev": "wrangler dev ./dist/index.js",
     "register": "node ./scripts/register.js",
     "deploy": "wrangler deploy",
