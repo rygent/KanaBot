@@ -94,15 +94,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/formatters@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@discordjs/formatters@npm:0.3.3"
-  dependencies:
-    discord-api-types: "npm:0.37.61"
-  checksum: 10c0/1833c2e20b87aa6ae03202502a64d5ae235ee6a25feb41786bb86b7414fac7c59e518f99f2a60b15ad713165c91e16f17b3e8024898d6a3cd3df9f3e94488cd1
-  languageName: node
-  linkType: hard
-
 "@discordjs/formatters@npm:^0.4.0":
   version: 0.4.0
   resolution: "@discordjs/formatters@npm:0.4.0"
@@ -3205,7 +3196,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20240502.0"
     "@discordjs/builders": "npm:^1.8.0"
-    "@discordjs/formatters": "npm:^0.3.3"
+    "@discordjs/formatters": "npm:^0.4.0"
     "@discordjs/rest": "npm:^2.2.0"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
     "@sapphire/time-utilities": "npm:^1.7.12"
