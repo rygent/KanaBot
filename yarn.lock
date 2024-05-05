@@ -72,9 +72,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/builders@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@discordjs/builders@npm:1.8.0"
+"@discordjs/builders@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@discordjs/builders@npm:1.8.1"
   dependencies:
     "@discordjs/formatters": "npm:^0.4.0"
     "@discordjs/util": "npm:^1.1.0"
@@ -83,7 +83,7 @@ __metadata:
     fast-deep-equal: "npm:^3.1.3"
     ts-mixer: "npm:^6.0.4"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/44967d65ae17401afd6b292ae1e94ae663c500fd72647e6ea9a8876b19fa9e8b52d29ea3f197748e4ebbb04affe3ec0a53e139b8c7afe7a8c4bcae5ac0d14c0f
+  checksum: 10c0/9447a0848aeafc66a00005f466a4a5fb25e1fe3a3fe8bea82f8f1cc04a6ad78b81a7cbfe59948f22f4f6a7fe994b33914dde0feca67dc82d00ffa3fbcd4d94cd
   languageName: node
   linkType: hard
 
@@ -3181,7 +3181,7 @@ __metadata:
   resolution: "kana@workspace:."
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20240502.0"
-    "@discordjs/builders": "npm:^1.8.0"
+    "@discordjs/builders": "npm:^1.8.1"
     "@discordjs/formatters": "npm:^0.4.0"
     "@discordjs/rest": "npm:^2.3.0"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
