@@ -582,6 +582,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sapphire/utilities@npm:^3.16.2":
+  version: 3.16.2
+  resolution: "@sapphire/utilities@npm:3.16.2"
+  checksum: 10c0/69144550cceffc2b427a2eece095481887110583064d3b965c1e1368b85591743cd055d9bdf12ab85430517c05b070c27dfec2670e0330e8f410b8e72b079f69
+  languageName: node
+  linkType: hard
+
 "@sindresorhus/is@npm:^4.0.0":
   version: 4.6.0
   resolution: "@sindresorhus/is@npm:4.6.0"
@@ -3195,7 +3202,7 @@ __metadata:
     "@discordjs/rest": "npm:^2.3.0"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
     "@sapphire/time-utilities": "npm:^1.7.12"
-    "@sapphire/utilities": "npm:^3.15.3"
+    "@sapphire/utilities": "npm:^3.16.2"
     "@swc/cli": "npm:^0.3.12"
     "@swc/core": "npm:^1.5.7"
     "@types/he": "npm:^1.2.3"
