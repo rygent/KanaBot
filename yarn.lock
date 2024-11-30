@@ -818,12 +818,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.17.7":
-  version: 20.17.7
-  resolution: "@types/node@npm:20.17.7"
+"@types/node@npm:^20.17.9":
+  version: 20.17.9
+  resolution: "@types/node@npm:20.17.9"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/e1fbc69ed34515da8a8a5cf4427e473f9c378f4cfe291f20635dda10a51a9854c687f5ab91eafdcbec2a0d52a1590e53ec6d49e53c1bc0e35ddde4f159246fcd
+  checksum: 10c0/1c37c3618407d56b76301578edabcb4c6a7ef093d0811c50fc4df8df68fc546797a294cafac0e50789f4e0e485cd1d6871964d8e6222fd420658bdae89c1fb4a
   languageName: node
   linkType: hard
 
@@ -3449,7 +3449,7 @@ __metadata:
     "@swc/cli": "npm:^0.5.1"
     "@swc/core": "npm:^1.9.3"
     "@types/he": "npm:^1.2.3"
-    "@types/node": "npm:^20.17.7"
+    "@types/node": "npm:^20.17.9"
     "@typescript-eslint/eslint-plugin": "npm:^6.21.0"
     "@typescript-eslint/parser": "npm:^6.21.0"
     discord-api-types: "npm:^0.37.107"
