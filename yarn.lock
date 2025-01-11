@@ -94,15 +94,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/formatters@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "@discordjs/formatters@npm:0.5.0"
-  dependencies:
-    discord-api-types: "npm:0.37.97"
-  checksum: 10c0/784e7a7cb82874eb3d5741c8058088accdc6151151d5dbafa634efdb184e0f5666a95e57ac8f6e514b2819b07f764dbb1d4258c0dbba37fc5645f800182ae1d9
-  languageName: node
-  linkType: hard
-
 "@discordjs/formatters@npm:^0.6.0":
   version: 0.6.0
   resolution: "@discordjs/formatters@npm:0.6.0"
@@ -1953,13 +1944,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:0.37.97":
-  version: 0.37.97
-  resolution: "discord-api-types@npm:0.37.97"
-  checksum: 10c0/1a08a0f44d3a7439fd1ac4128e4a853c498fa5477e40bc68f2c62d5b2abe8aad1d1d402d8a59a6ac55adf348354dc6c97865a11548b1a25bf2f0878cff3a54b0
-  languageName: node
-  linkType: hard
-
 "discord-api-types@npm:^0.37.114, discord-api-types@npm:^0.37.115":
   version: 0.37.115
   resolution: "discord-api-types@npm:0.37.115"
@@ -3609,7 +3593,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20241224.0"
     "@discordjs/builders": "npm:^1.10.0"
-    "@discordjs/formatters": "npm:^0.5.0"
+    "@discordjs/formatters": "npm:^0.6.0"
     "@discordjs/rest": "npm:^2.4.2"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
     "@sapphire/time-utilities": "npm:^1.7.14"
