@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250109.0",
-    "@swc/cli": "^0.5.2",
-    "@swc/core": "^1.10.3",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.7",
     "@types/he": "^1.2.3",
     "@types/node": "^20.17.12",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
