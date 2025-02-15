@@ -103,20 +103,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/rest@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "@discordjs/rest@npm:2.4.2"
+"@discordjs/rest@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "@discordjs/rest@npm:2.4.3"
   dependencies:
     "@discordjs/collection": "npm:^2.1.1"
     "@discordjs/util": "npm:^1.1.1"
     "@sapphire/async-queue": "npm:^1.5.3"
     "@sapphire/snowflake": "npm:^3.5.3"
     "@vladfrangu/async_event_emitter": "npm:^2.4.6"
-    discord-api-types: "npm:^0.37.114"
+    discord-api-types: "npm:^0.37.119"
     magic-bytes.js: "npm:^1.10.0"
     tslib: "npm:^2.6.3"
-    undici: "npm:6.19.8"
-  checksum: 10c0/d380461d5e999d30110b3e28999e8d7b0609f263c61dc7ed1ad9076272edb2d05c726725ab19ac8c28b8dd602c4d385d38fd335384db968cda545e86897d2d2a
+    undici: "npm:6.21.1"
+  checksum: 10c0/68849edfa995daf9b88dbaad7d27a8737311910d862de282d2b8c9bf63e3d4bbc45dde1fed10bfabe5221ca94be5fb52b45ef789058b4ede29939f125b694f2f
   languageName: node
   linkType: hard
 
@@ -3611,7 +3611,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:^4.20250204.0"
     "@discordjs/builders": "npm:^1.10.0"
     "@discordjs/formatters": "npm:^0.6.0"
-    "@discordjs/rest": "npm:^2.4.2"
+    "@discordjs/rest": "npm:^2.4.3"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
     "@sapphire/time-utilities": "npm:^1.7.14"
     "@sapphire/utilities": "npm:^3.18.2"
@@ -5485,10 +5485,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:6.19.8":
-  version: 6.19.8
-  resolution: "undici@npm:6.19.8"
-  checksum: 10c0/07fd8520bce7e34ea29c07ef0de27b734183042cdb4e2f1262cd1fb9b755a6b04ff2471040395dfb1770fb7786069a97c5178bcf706b80a34075994f46feb37c
+"undici@npm:6.21.1":
+  version: 6.21.1
+  resolution: "undici@npm:6.21.1"
+  checksum: 10c0/d604080e4f8db89b35a63b483b5f96a5f8b19ec9f716e934639345449405809d2997e1dd7212d67048f210e54534143384d712bd9075e4394f0788895ef9ca8e
   languageName: node
   linkType: hard
 
