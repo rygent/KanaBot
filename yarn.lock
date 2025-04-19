@@ -69,10 +69,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20250413.0":
-  version: 4.20250413.0
-  resolution: "@cloudflare/workers-types@npm:4.20250413.0"
-  checksum: 10c0/d8de74882ba916b3c22c03a73bc9182a1d3e76f38cdd51ae652ab46c52a4645cb0a8647f5dd77046ea7040a832f512c5541b00ad752d9da84879dbdef846d29b
+"@cloudflare/workers-types@npm:^4.20250419.0":
+  version: 4.20250419.0
+  resolution: "@cloudflare/workers-types@npm:4.20250419.0"
+  checksum: 10c0/387ddbe5f565db9b6eb824ebb4c8e6b9f5460d5d15a4a100e7b6f43cf395d26e238c335eb004838b944cea400f56502f5c322fdd07f60987322ccdc483eb5c5d
   languageName: node
   linkType: hard
 
@@ -3846,7 +3846,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kana@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20250413.0"
+    "@cloudflare/workers-types": "npm:^4.20250419.0"
     "@discordjs/builders": "npm:^1.10.1"
     "@discordjs/formatters": "npm:^0.6.0"
     "@discordjs/rest": "npm:^2.4.3"
