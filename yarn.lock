@@ -116,6 +116,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@discordjs/formatters@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "@discordjs/formatters@npm:0.6.1"
+  dependencies:
+    discord-api-types: "npm:^0.38.1"
+  checksum: 10c0/463759a10be7af9c82862f17f611aa1c737aa8dbd31816c89e9ce14c79eef0f86f57a18c3a64e180c03f9a482aa790427a4c7584dc09e76482b328da012561c2
+  languageName: node
+  linkType: hard
+
 "@discordjs/rest@npm:^2.4.3":
   version: 2.4.3
   resolution: "@discordjs/rest@npm:2.4.3"
@@ -2170,6 +2179,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"discord-api-types@npm:^0.38.1":
+  version: 0.38.1
+  resolution: "discord-api-types@npm:0.38.1"
+  checksum: 10c0/8616eb025ccc998d1c5eca08fb50ba2faefbd53ed786ea84ded9b9f881037104bac22c6f53db357c1d12660ea32375a507c3cce8cf36873382ace42ddc73ca4b
+  languageName: node
+  linkType: hard
+
 "discord-interactions@npm:^3.4.0":
   version: 3.4.0
   resolution: "discord-interactions@npm:3.4.0"
@@ -3848,7 +3864,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20250420.0"
     "@discordjs/builders": "npm:^1.10.1"
-    "@discordjs/formatters": "npm:^0.6.0"
+    "@discordjs/formatters": "npm:^0.6.1"
     "@discordjs/rest": "npm:^2.4.3"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
     "@sapphire/time-utilities": "npm:^1.7.14"
