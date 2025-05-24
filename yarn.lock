@@ -3867,7 +3867,7 @@ __metadata:
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.10"
     typescript: "npm:^5.8.3"
-    wrangler: "npm:^3.114.8"
+    wrangler: "npm:^3.114.9"
   languageName: unknown
   linkType: soft
 
@@ -4060,9 +4060,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20250408.1":
-  version: 3.20250408.1
-  resolution: "miniflare@npm:3.20250408.1"
+"miniflare@npm:3.20250408.2":
+  version: 3.20250408.2
+  resolution: "miniflare@npm:3.20250408.2"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:8.14.0"
@@ -4077,7 +4077,7 @@ __metadata:
     zod: "npm:3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10c0/f1bef5f2c7611210b2ab917a048beef85ab02152f4d83be1fa906a1243d7eaae8325d56b01dd27d2e8c8495362a9dec2a5bd864663795810d520f574e49dca4f
+  checksum: 10c0/5cb962984e9d510e58285d958060c28fba1d4d3815755b4303b04e84cd7f90b46e1f1b52993d0c6f701e190ea824ab46d64c0cdca928a9003a08a32fe7e6096c
   languageName: node
   linkType: hard
 
@@ -5923,9 +5923,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.114.8":
-  version: 3.114.8
-  resolution: "wrangler@npm:3.114.8"
+"wrangler@npm:^3.114.9":
+  version: 3.114.9
+  resolution: "wrangler@npm:3.114.9"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/unenv-preset": "npm:2.0.2"
@@ -5934,7 +5934,7 @@ __metadata:
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20250408.1"
+    miniflare: "npm:3.20250408.2"
     path-to-regexp: "npm:6.3.0"
     sharp: "npm:^0.33.5"
     unenv: "npm:2.0.0-rc.14"
@@ -5952,7 +5952,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/77bbeff1b31fe79feb8235650960dd14fcf89351fd816dc66255b4bb4429b66934c9ba3a99c83af64594bc3b9829ffc5fa3818e878e9db317fc3f583871b28df
+  checksum: 10c0/e9aa0388fa462c59aa0766767100ac17cc9c82068507c4bc1884bfbed3af8a10cc71fe20793970c0d274bfe768af26165bf2d37b0626fbd723f387f9f7af2fd4
   languageName: node
   linkType: hard
 
