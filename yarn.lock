@@ -4392,7 +4392,7 @@ __metadata:
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.10"
     typescript: "npm:^5.8.3"
-    wrangler: "npm:^3.114.10"
+    wrangler: "npm:^3.114.11"
   languageName: unknown
   linkType: soft
 
@@ -6790,9 +6790,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.114.10":
-  version: 3.114.10
-  resolution: "wrangler@npm:3.114.10"
+"wrangler@npm:^3.114.11":
+  version: 3.114.11
+  resolution: "wrangler@npm:3.114.11"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/unenv-preset": "npm:2.0.2"
@@ -6819,7 +6819,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/4bfd6c650655e30595bab425b46334afbd7ba244c5c644c71d3da3b4e34dabb301abdb3c6c2af14de5721bdb60e379e4dfc93d56e2734961d03452a4cebde7d1
+  checksum: 10c0/30698f9f23bfa103eac984d1e0e425d3a47fb6f9167d7cd670d8e6bc65ceab6035e406ff961de7f43812d23a09f2f3ec6e215e6ec46d112598aecf461d458d95
   languageName: node
   linkType: hard
 
