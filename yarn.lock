@@ -850,12 +850,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rygent/anilist@npm:^1.5.0-next.f50a2bb.0":
-  version: 1.5.0-next.f50a2bb.0
-  resolution: "@rygent/anilist@npm:1.5.0-next.f50a2bb.0"
+"@rygent/anilist@npm:^1.5.0-next.fb9cb00":
+  version: 1.5.0-next.fb9cb00
+  resolution: "@rygent/anilist@npm:1.5.0-next.fb9cb00"
   dependencies:
-    html-entities: "npm:^2.4.0"
-  checksum: 10c0/f951ccfa9da5991c7294d4531c2f7fedd0069e791b3016ea4024d683f3bb8038c8df6cf299691fa33c2774d1229fd009a4b01130ca1e32cb3b7696c63b615129
+    html-entities: "npm:^2.5.2"
+    undici: "npm:^6.21.0"
+  checksum: 10c0/3335e2c7e28c7425824cd39a0b896529c37edd2f3d17471b3efb5662e41e641e2cde5ac59f76f409c397b197481ff0c48d363f6e386ebcda42aaeeede2d2e123
   languageName: node
   linkType: hard
 
@@ -3668,10 +3669,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-entities@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "html-entities@npm:2.4.0"
-  checksum: 10c0/42bbd5d91f451625d7e35aaed41c8cd110054c0d0970764cb58df467b3f27f20199e8cf7b4aebc8d4eeaf17a27c0d1fb165f2852db85de200995d0f009c9011d
+"html-entities@npm:^2.5.2":
+  version: 2.6.0
+  resolution: "html-entities@npm:2.6.0"
+  checksum: 10c0/7c8b15d9ea0cd00dc9279f61bab002ba6ca8a7a0f3c36ed2db3530a67a9621c017830d1d2c1c65beb9b8e3436ea663e9cf8b230472e0e413359399413b27c8b7
   languageName: node
   linkType: hard
 
@@ -4368,7 +4369,7 @@ __metadata:
     "@discordjs/builders": "npm:^1.11.3"
     "@discordjs/formatters": "npm:^0.6.1"
     "@discordjs/rest": "npm:^2.5.1"
-    "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
+    "@rygent/anilist": "npm:^1.5.0-next.fb9cb00"
     "@sapphire/time-utilities": "npm:^1.7.14"
     "@sapphire/utilities": "npm:^3.18.2"
     "@swc/cli": "npm:^0.7.8"
@@ -6579,7 +6580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:6.21.3":
+"undici@npm:6.21.3, undici@npm:^6.21.0":
   version: 6.21.3
   resolution: "undici@npm:6.21.3"
   checksum: 10c0/294da109853fad7a6ef5a172ad0ca3fb3f1f60cf34703d062a5ec967daf69ad8c03b52e6d536c5cba3bb65615769bf08e5b30798915cbccdddaca01045173dda

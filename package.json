@@ -19,7 +19,7 @@
     "@discordjs/builders": "^1.11.3",
     "@discordjs/formatters": "^0.6.1",
     "@discordjs/rest": "^2.5.1",
-    "@rygent/anilist": "^1.5.0-next.f50a2bb.0",
+    "@rygent/anilist": "^1.5.0-next.fb9cb00",
     "@sapphire/time-utilities": "^1.7.14",
     "@sapphire/utilities": "^3.18.2",
     "discord-api-types": "^0.38.18",
