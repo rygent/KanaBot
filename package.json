@@ -22,7 +22,7 @@
     "@rygent/anilist": "^1.5.0-next.f50a2bb.0",
     "@sapphire/time-utilities": "^1.7.14",
     "@sapphire/utilities": "^3.18.2",
-    "discord-api-types": "^0.38.34",
+    "discord-api-types": "^0.38.35",
     "discord-interactions": "^3.4.0",
     "dotenv": "^16.6.1",
     "globby": "^14.1.0",
