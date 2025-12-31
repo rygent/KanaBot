@@ -43,7 +43,7 @@
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
-    "prettier": "^3.0.3",
+    "prettier": "^3.7.4",
     "rimraf": "^5.0.10",
     "typescript": "^5.9.3",
     "wrangler": "^3.114.16"
