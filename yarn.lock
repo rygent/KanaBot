@@ -85,18 +85,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/builders@npm:^1.13.1":
-  version: 1.13.1
-  resolution: "@discordjs/builders@npm:1.13.1"
+"@discordjs/builders@npm:^1.14.1":
+  version: 1.14.1
+  resolution: "@discordjs/builders@npm:1.14.1"
   dependencies:
     "@discordjs/formatters": "npm:^0.6.2"
     "@discordjs/util": "npm:^1.2.0"
     "@sapphire/shapeshift": "npm:^4.0.0"
-    discord-api-types: "npm:^0.38.33"
+    discord-api-types: "npm:^0.38.40"
     fast-deep-equal: "npm:^3.1.3"
     ts-mixer: "npm:^6.0.4"
     tslib: "npm:^2.6.3"
-  checksum: 10c0/3499cb19f70ac8e04a5484b3f0f7aef4e281529e1cb78049a19cb09fac4b325323b81771de49276894cc1bb98eff47ec4194f35dd85b88d3eb1d9f442f52169c
+  checksum: 10c0/bcabcb1877778e189e5844179035996c253c79f866279b811086c218b26615efcbda451e561cd7320567f5311501572f61f7f5704ea39cdd9f9d31fa56909b88
   languageName: node
   linkType: hard
 
@@ -2279,6 +2279,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"discord-api-types@npm:^0.38.40":
+  version: 0.38.55
+  resolution: "discord-api-types@npm:0.38.55"
+  checksum: 10c0/a3e1e1e3f76da4087e9e4abceab943d249d6dd681c60798ff2b38df812b41af00cd86e9aa10d3e2bd2cb558e3d417ac470b3536088bb9ecb07030d9dfbb342d3
+  languageName: node
+  linkType: hard
+
 "discord-interactions@npm:^3.4.0":
   version: 3.4.0
   resolution: "discord-interactions@npm:3.4.0"
@@ -4381,7 +4388,7 @@ __metadata:
   resolution: "kana@workspace:."
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20251228.0"
-    "@discordjs/builders": "npm:^1.13.1"
+    "@discordjs/builders": "npm:^1.14.1"
     "@discordjs/formatters": "npm:^0.6.2"
     "@discordjs/rest": "npm:^2.6.0"
     "@rygent/anilist": "npm:^1.5.0-next.f50a2bb.0"
